@@ -7,7 +7,7 @@ class SearchBar extends Component{
   }
   render(){
     return(
-      <div>
+      <div className="search-bar">
 
         {/*es6 approach of defining the function inline
         controlled element */}
@@ -16,7 +16,7 @@ class SearchBar extends Component{
           onChange= {event => this.setState({term:event.target.value})}/>
         { /* using function */ }
         <input onChange = {this.onIpChange} />
-        {this.state.term}
+      <br/>{this.state.term}
       </div>
     );
   }
