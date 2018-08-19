@@ -7,9 +7,11 @@ const VideoList = (props)=>{
   });
 
   return(
-    <ul>
-      {videoItem}
-    </ul>
+    <div className="col-md-8">
+      <ul>
+        {videoItem}
+      </ul>
+    </div>
   )
 }
 

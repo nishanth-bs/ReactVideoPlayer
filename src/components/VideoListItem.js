@@ -1,6 +1,9 @@
 import React from 'react';
 
 const VideoListItem = ({video})=>{
+  if(!video){
+    return <div>Loading</div>;
+  }
   const imageUrl = video.snippet.thumbnails.default.url;
   const videoTitle = video.snippet.title;
   console.log(video);
